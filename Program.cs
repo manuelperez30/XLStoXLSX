@@ -30,7 +30,7 @@ class Program
                     if (workbookPart != null)
                     {
 
-                        string IndexWorkSheet = GetIDSheet(workbookPart, "Inventario");
+                        string IndexWorkSheet = GetIDSheet(workbookPart, "INVENTARIO");
                         if (!string.IsNullOrEmpty(IndexWorkSheet))
                         {
                             WorksheetPart worksheetPart = (WorksheetPart)workbookPart.GetPartById(IndexWorkSheet);
