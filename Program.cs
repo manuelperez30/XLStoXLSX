@@ -8,15 +8,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] arg = { AppDomain.CurrentDomain.BaseDirectory + "MODEL.xlsx", "508630", "4" };
+        string[] arg = { AppDomain.CurrentDomain.BaseDirectory + "MODEL.xlsx", "000000", "0" };
         if(args.Length>0){
             for (int index = 0; index < args.Length; index++)
                 arg[index] = args[index];
         }
-        Console.WriteLine(DateTime.Now);
         Console.WriteLine("{0} : {1} : {2}", arg[0], arg[1], arg[2]);
         ReadXLSX(arg[0], arg[1], arg[2]);
-        Console.WriteLine(DateTime.Now);
     }
 
     private static void ReadXLSX(string filePath, string codigoSKU, string cantidad)
