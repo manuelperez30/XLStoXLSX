@@ -8,7 +8,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string[] arg = { AppDomain.CurrentDomain.BaseDirectory + "INVENTARIO BF 01-FEB-2023.xlsx", "508630", "4" };
+        string[] arg = { AppDomain.CurrentDomain.BaseDirectory + "MODEL.xlsx", "508630", "4" };
         if(args.Length>0){
             for (int index = 0; index < args.Length; index++)
                 arg[index] = args[index];
